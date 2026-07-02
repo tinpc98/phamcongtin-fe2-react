@@ -9,7 +9,15 @@ const HomePage = () => {
   const handleAddUser = () => {
     navigate("/adduser");
   };
-
+  const handleListStudent = () => {
+    navigate("/liststudent");
+  };
+  const handleListProduct = () => {
+    navigate("/listproduct");
+  };
+  const handleListUserManagement = () => {
+    navigate("/listusermanagement");
+  };
   return (
     <>
       <div className="max-w-6xl mx-auto mt-10 px-4 text-center">
@@ -18,6 +26,24 @@ const HomePage = () => {
         <Button type="primary" onClick={handleAddUser}>
           Add User
         </Button>
+        <div className=" text-left">
+          <h2>Danh sách sinh viên</h2>
+          <Button type="primary" onClick={handleListStudent}>
+            Xem danh sách
+          </Button>
+        </div>
+        <div className=" text-left">
+          <h2>Danh sách Sản Phẩm</h2>
+          <Button type="primary" onClick={handleListProduct}>
+            Xem danh sách
+          </Button>
+        </div>
+        <div className=" text-left">
+          <h2>Danh sách Sản Phẩm</h2>
+          <Button type="primary" onClick={handleListUserManagement}>
+            Xem danh sách
+          </Button>
+        </div>
       </div>
       <Toaster />
     </>
