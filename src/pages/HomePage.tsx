@@ -18,6 +18,9 @@ const HomePage = () => {
   const handleListUserManagement = () => {
     navigate("/listusermanagement");
   };
+  const lap3 = () => {
+    navigate("/lap3");
+  };
   return (
     <>
       <div className="max-w-6xl mx-auto mt-10 px-4 text-center">
@@ -41,6 +44,12 @@ const HomePage = () => {
         <div className=" text-left">
           <h2>Danh sách Sản Phẩm</h2>
           <Button type="primary" onClick={handleListUserManagement}>
+            Xem danh sách
+          </Button>
+        </div>
+        <div className=" text-left">
+          <h2>Lap3</h2>
+          <Button type="primary" onClick={lap3}>
             Xem danh sách
           </Button>
         </div>

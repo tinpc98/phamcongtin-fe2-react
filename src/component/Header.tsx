@@ -17,11 +17,14 @@ const Header = () => {
             <Link to="/listuser" className="hover:text-gray-200">
               Danh sách
             </Link>
-            <Link to="/add" className="hover:text-gray-200">
+            <Link to="/addproduct" className="hover:text-gray-200">
               Thêm mới
             </Link>
             <Link to="/dashboard" className="hover:text-gray-200">
               DashBoard
+            </Link>
+            <Link to="/post" className="hover:text-gray-200">
+              Bài viết
             </Link>
           </div>
 
@@ -29,7 +32,7 @@ const Header = () => {
             <Link to="/login" className="hover:text-gray-200">
               Đăng nhập
             </Link>
-            <Link to="#" className="hover:text-gray-200">
+            <Link to="/register" className="hover:text-gray-200">
               Đăng ký
             </Link>
           </div>
