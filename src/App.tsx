@@ -11,6 +11,7 @@ import ListUserManagement from "./pages/ListUserManagement";
 import Register from "./pages/Register";
 import AddProduct from "./pages/AddProduct";
 import Post from "./pages/Post";
+import Stories from "./pages/Lap4";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         />
         <Route path="login" element={<Login></Login>} />
         <Route path="Register" element={<Register></Register>} />
+        <Route path="stories" element={<Stories></Stories>} />
       </Routes>
     </>
   );

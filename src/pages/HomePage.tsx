@@ -21,6 +21,9 @@ const HomePage = () => {
   const lap3 = () => {
     navigate("/lap3");
   };
+  const stories = () => {
+    navigate("/stories");
+  };
   return (
     <>
       <div className="max-w-6xl mx-auto mt-10 px-4 text-center">
@@ -53,7 +56,14 @@ const HomePage = () => {
             Xem danh sách
           </Button>
         </div>
+        <div className=" text-left">
+          <h2>Lap4</h2>
+          <Button type="primary" onClick={stories}>
+            Xem danh sách
+          </Button>
+        </div>
       </div>
+
       <Toaster />
     </>
   );
