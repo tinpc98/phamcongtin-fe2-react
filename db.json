@@ -15,6 +15,56 @@
       "description": "Truyện về bác hồ",
       "createdAt": "1/1/2026",
       "id": "V66u_4ieBcU"
+    },
+    {
+      "title": "Truyện ma Xuân Thủy Cầu Giấy",
+      "author": "Păng Păng",
+      "categoryId": "1",
+      "description": "Truyện ma tại ngõ 181 Xuân thủy",
+      "createdAt": "1/1/2026",
+      "image": "https://sohanews.sohacdn.com/160588918557773824/2022/8/10/photo-1-16601148627891781120455.jpg",
+      "id": "Zg3pROI6sZ0"
+    },
+    {
+      "title": "truyện ma cầu giấy",
+      "author": "Păng Păng",
+      "categoryId": "FNuV3r-FMk0",
+      "description": "pặng pịa ra",
+      "createdAt": "1/1/2026",
+      "image": "https://sohanews.sohacdn.com/160588918557773824/2022/8/10/photo-1-16601148627891781120455.jpg",
+      "id": "DOWZ5F-2VTU"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "title": "Kinh dị",
+      "description": "Những câu chuyện bí ẩn và rùng rợn",
+      "active": true
+    },
+    {
+      "id": "2",
+      "title": "Tiên hiệp",
+      "description": "Thế giới tu tiên và võ lược",
+      "active": true
+    },
+    {
+      "title": "Truyện Hài",
+      "description": "truyện hài",
+      "active": true,
+      "id": "LP5ZIu36TE8"
+    },
+    {
+      "title": "Truyện Ma thái lan",
+      "description": "Truyện Ma thái lan",
+      "active": true,
+      "id": "0DCe5OSzwrs"
+    },
+    {
+      "title": "Truyện ma cầu giấy",
+      "description": "gio tác rả Păng Păng pịa ra",
+      "active": true,
+      "id": "FNuV3r-FMk0"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

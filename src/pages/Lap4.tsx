@@ -3,6 +3,7 @@ import { useQuery, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 import { Table, Image, Spin, Button, Input } from "antd";
 import { useNavigate } from "react-router-dom";
+import { Color } from "antd/es/color-picker";
 
 const Stories = () => {
   const { data, isLoading, isError } = useQuery({
@@ -32,6 +33,9 @@ const Stories = () => {
   const navigate = useNavigate();
   const addStories = () => {
     navigate("/addproduct");
+  };
+  const addCategory = () => {
+    navigate("/addcategorystories");
   };
   const columns = [
     {
@@ -64,8 +68,16 @@ const Stories = () => {
       title: "Thao tác",
       render: (_, record) => (
         <>
-          <Button>Edit</Button>
-          <Button onClick={() => handleDelete(record.id)}>Delete</Button>
+          <Button type="primary" style={{ background: "green", gap: 10 }}>
+            Edit
+          </Button>
+          <Button
+            type="primary"
+            onClick={() => handleDelete(record.id)}
+            style={{ background: "red", gap: 10 }}
+          >
+            Delete
+          </Button>
         </>
       ),
     },
@@ -81,7 +93,16 @@ const Stories = () => {
         onChange={(e) => setKeyword(e.target.value)}
         style={{ width: 300, marginBottom: 16 }}
       />
-      <Button onClick={addStories}>Thêm truyện</Button>
+      <Button
+        type="primary"
+        onClick={addStories}
+        style={{ marginRight: 7, gap: 20, padding: 10 }}
+      >
+        Thêm truyện
+      </Button>
+      <Button type="primary" onClick={addCategory}>
+        Thêm danh mục truyện
+      </Button>
 
       <Table
         columns={columns}
