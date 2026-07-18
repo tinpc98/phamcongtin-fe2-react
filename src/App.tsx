@@ -13,6 +13,7 @@ import AddProduct from "./pages/AddProduct";
 import Post from "./pages/Post";
 import Stories from "./pages/Lap4";
 import AddCategoryStories from "./pages/AddCategoryStories";
+import EditStories from "./pages/EditStories";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="" element={<HomePage></HomePage>} />
         <Route path="dashboard" element={<DashBoard></DashBoard>} />
         <Route path="addproduct" element={<AddProduct></AddProduct>} />
+        <Route path="editstories/:id" element={<EditStories></EditStories>} />
         <Route
           path="addcategorystories"
           element={<AddCategoryStories></AddCategoryStories>}

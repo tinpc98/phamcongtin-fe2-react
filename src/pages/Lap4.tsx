@@ -37,6 +37,9 @@ const Stories = () => {
   const addCategory = () => {
     navigate("/addcategorystories");
   };
+  const editStories = (id: number) => {
+    navigate(`/editstories/${id}`);
+  };
   const columns = [
     {
       title: "ID",
@@ -68,7 +71,11 @@ const Stories = () => {
       title: "Thao tác",
       render: (_, record) => (
         <>
-          <Button type="primary" style={{ background: "green", gap: 10 }}>
+          <Button
+            type="primary"
+            onClick={() => editStories(record.id)}
+            style={{ background: "green", gap: 10 }}
+          >
             Edit
           </Button>
           <Button
